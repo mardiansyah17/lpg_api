@@ -7,9 +7,9 @@ const {
 } = require("../controller/tripayController");
 const router = express.Router();
 
-router.get('/PaymentChanel', getPaymentChanel)
-router.post('/requestTransaction', requestTransaction)
-router.get('/detailTransaction', detailTransaction)
+router.get('/payment-chanel', getPaymentChanel)
+router.post('/request-transaction', requestTransaction)
+router.get('/detail-transaction', detailTransaction)
 router.post('/callback', handleCallback)
 
 module.exports = router;
